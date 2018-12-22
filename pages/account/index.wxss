@@ -1,0 +1,6 @@
+/* pages/help/index.wxss */
+
+.link {
+  color: #58f;
+  text-decoration: underline;
+}

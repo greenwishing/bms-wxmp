@@ -1,0 +1,6 @@
+/* pages/index/init.wxss */
+
+.userinfo-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}

@@ -1,0 +1,11 @@
+/**index.wxss**/
+
+.userinfo-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pie-chart-text {
+  text-align: center;
+  font-size: 12px;
+}

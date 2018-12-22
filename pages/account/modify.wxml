@@ -1,0 +1,24 @@
+<!--pages/account/modify.wxml-->
+<form bindsubmit="doModifyAccount">
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">帐号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="account" value="{{account}}" placeholder="设置登录帐号"/>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">设置密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="password" password="true" placeholder="设置登录密码"/>
+      </view>
+    </view>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" form-type="submit">更改</button>
+  </view>
+</form>

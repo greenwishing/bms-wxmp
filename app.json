@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/init",
+    "pages/billing/add",
+    "pages/billing/list",
+    "pages/account/index",
+    "pages/account/modify"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#179b16",
+    "navigationBarTitleText": "账小流",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#179b16",
+    "list": [
+      {
+        "iconPath": "icons/chart.png",
+        "selectedIconPath": "icons/chart_active.png",
+        "pagePath": "pages/index/index",
+        "text": "概览"
+      },
+      {
+        "iconPath": "icons/add.png",
+        "selectedIconPath": "icons/add_active.png",
+        "pagePath": "pages/billing/add",
+        "text": "记账"
+      },
+      {
+        "iconPath": "icons/billing.png",
+        "selectedIconPath": "icons/billing_active.png",
+        "pagePath": "pages/billing/list",
+        "text": "账单"
+      },
+      {
+        "iconPath": "icons/feedback.png",
+        "selectedIconPath": "icons/feedback_active.png",
+        "pagePath": "pages/account/index",
+        "text": "更多"
+      }
+    ]
+  }
+}

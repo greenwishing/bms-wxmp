@@ -1,0 +1,32 @@
+<!--pages/billing/list.wxml-->
+<view class="section" wx:if="{{paging!=null}}">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{searchText}}" focus="{{searchbarShowed}}" bindconfirm="doSearch" />
+        <view class="weui-icon-clear" wx:if="{{searchText.length > 0}}" bindtap="clearSearchText">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{searchbarShowed}}" bindtap="showSearchInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!searchbarShowed}}" bindtap="hideSearchInput">取消</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell" wx:for="{{paging.list}}" wx:key="item">
+      <view class="weui-cell__bd">
+        <view>{{item.name}}</view>
+        <view class="text-small color-grey">{{item.occurredTimeFriendly}} {{item.subcategoryName}} {{item.type.label}}</view>
+      </view>
+      <view class="weui-cell__ft"><span class="amount-sign amount-sign_{{item.type.value}}">{{item.amount}}</span></view>
+    </view>
+  </view>
+  <view class="weui-btn-area weui-btn-area__inline">
+    <button class="weui-btn" type="default" size="mini" disabled="{{!paging.hasPreviousPage}}" bindtap="previousPage">上一页</button>
+    <button class="weui-btn" type="default" size="mini" disabled="{{!paging.hasNextPage}}" bindtap="nextPage">下一页</button>
+  </view>
+</view>

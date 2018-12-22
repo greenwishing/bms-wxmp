@@ -1,0 +1,127 @@
+/**app.wxss**/
+
+@import 'weui.wxss';
+
+page {
+  background: #f8f8f8;
+}
+
+.container {
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.weui-btn-area__inline {
+  text-align: center;
+}
+
+.weui-btn-area__inline .weui-btn  {
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+.weui-btn-area:last-child {
+    margin-bottom: 1.4em;
+}
+
+.text-left { text-align: left;}
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+
+.pull-right {
+    padding: 0 15px;
+    text-align: right;
+}
+
+.weui-flex + .weui-flex {
+    margin-top: 10px;
+}
+
+.color-grey {
+    color: #888;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.weui-media-box_appmsg .weui-media-box__thumb {
+    height: 100%;
+    background: no-repeat 50%;
+    background-size: cover;
+}
+
+.weui-actionsheet__menu {
+    -webkit-overflow-scrolling: touch;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.brand { display: flex; flex-direction: column; align-items: center; }
+.brand-logo { width: 128px; height: 128px; border-radius: 50%; box-shadow: 3px 3px 12px rgba(0,0,0,0.1); background-color: rgba(255,255,255,.5)  }
+.brand-text { color: #1aad19; font-size: 4.5em; font-weight: 300; text-shadow: 2px 2px 2px #fff }
+.brand-text_hide .brand-text { display: none; }
+.brand-text_hide .brand-logo {  margin: 20px; }
+.brand-logo_hide .brand-logo { display: none; }
+.brand-logo_hide .brand-text { margin: 20px; }
+.weui-footer {  margin: 10px auto; }
+.weui-footer a { color: inherit;}
+
+.weui-article img {
+    display: block;
+    margin: 0 auto;
+}
+
+.signum {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.signum_0 {
+    color: #888;
+}
+.signum_-1 {
+    color:#ff3b30;
+}
+.signum_1 {
+    color:#4cd964;
+}
+
+.amount-sign {
+    font-weight: 500;
+    font-size: 16px;
+}
+.amount-sign:before {
+    content: '￥';
+}
+.amount-sign_EXPEND:before,
+.amount-sign_LOAN:before,
+.amount-sign_PAYBACK:before {
+    content: '-￥';
+}
+.amount-sign_INCOME:before,
+.amount-sign_BORROW:before,
+.amount-sign_RECEIVE:before {
+    content: '+￥';
+}
+
+.chart {
+    width: 100%;
+    height: 230px;
+}
+.chart.chart-pie {
+  height: 260px;
+}
+.chart + .chart {
+  margin-top: 15px;
+}
+
+.button-sp-area {
+  text-align: center;
+}
+.button-sp-area .weui-btn + .weui-btn {
+  margin-left: 5px;
+}

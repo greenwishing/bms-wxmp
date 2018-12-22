@@ -1,0 +1,31 @@
+<!--pages/help/index.wxml-->
+<view class="weui-cells__title">平台帐号</view>
+<view class="weui-cells weui-cells_after-title">
+  <div class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="modifyAccount">
+      <view class="weui-cell__bd">{{account}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </div>
+</view>
+<view class="weui-cells__title">设置</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="comingSoon">
+      <view class="weui-cell__bd">账户</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="comingSoon">
+      <view class="weui-cell__bd">账单分类</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="comingSoon">
+      <view class="weui-cell__bd">文章</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>
+<view class="weui-cells__tips">设置平台帐号后，可在 greenwishing.cn 进行更多操作，点击<text class="link" bindtap="copyUrl">复制地址</text>，请在浏览器中粘贴打开</view>
+<view class="weui-btn-area">
+  <button class="weui-btn" type="primary" plain="true" open-type="feedback">反馈与建议</button>
+  <button class="weui-btn" type="default" plain="true" bindtap="cleanCache">清除缓存</button>
+</view>
+<view class="weui-footer">
+  <view class="weui-footer__text">© 2018 greenwishing.cn</view>
+</view>
